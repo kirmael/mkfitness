@@ -1,0 +1,112 @@
+
+/* inside */
+
+.about-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-map {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.about-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.about-content {
+  flex: 1;
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.about-content p {
+  color: #ffffff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maptext h7 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+}
+.partners, .services, .trainers {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(255,255,255,0.1);
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.partners h2, .services h2, .trainers h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.partners ul, .services ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.partners li, .services li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.trainers p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.trainer-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: #ff0000; 
+}
+
+.cta-membership {
+  text-align: center;
+  margin: 40px 0;
+}

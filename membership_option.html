@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join MK Fitness</title>
+  <link rel="stylesheet" href="membership.css">
+  <link rel="stylesheet" href="global.css">
+  <script src="homejs.js"></script>
+</head>
+
+<body>
+  <header class="top-banner">
+    <p class="left-text">Day One</p>
+    <img src="images/Mkfitness logo.png" alt="Mkfitness Logo" class="center-logo">
+    <p class="right-text">One Day</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="membership.html">Membership</a>
+    <a href="gym.html">Gym and Features</a>
+    <a href="feedbacks.html">Feedbacks and Comments</a>
+  </nav>
+
+<main class="membership-section">
+  <h1>Apply for Membership</h1>
+  <p>Please select your membership type and enter your details below.</p>
+
+  <form class="membership-form" action="submit_membership.php" method="post">
+    <!-- Membership Type -->
+    <label for="plan">Choose Membership Plan:</label>
+    <select id="plan" name="plan" required>
+      <option value="">-- Select a Plan --</option>
+      <option value="basic">Basic (£25 / month)</option>
+      <option value="standard">Standard (£40 / month)</option>
+      <option value="premium">Premium (£60 / month)</option>
+      <option value="student">Student (£20 / month, ages 16–22)</option>
+      <option value="senior">Senior (£18 / month, ages 60+)</option>
+      <option value="onetime">One-Time Pass (£8 / visit)</option>
+    </select>
+
+    <!-- Personal Details -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="16" required>
+
+    <!-- Address -->
+    <label for="address">Home Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <!-- Bank Details -->
+    <h3>Payment Information</h3>
+    <label for="cardname">Cardholder Name:</label>
+    <input type="text" id="cardname" name="cardname" required>
+
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" maxlength="16" required>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="month" id="expiry" name="expiry" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" maxlength="4" required>
+
+    <!-- Emergency Contact -->
+    <h3>Emergency Contact</h3>
+    <label for="emergency-name">Contact Name:</label>
+    <input type="text" id="emergency-name" name="emergency-name" required>
+
+    <label for="emergency-phone">Contact Phone:</label>
+    <input type="tel" id="emergency-phone" name="emergency-phone" required>
+
+    <label for="relationship">Relationship (e.g. Parent, Guardian, Friend):</label>
+    <input type="text" id="relationship" name="relationship" required>
+
+    <!-- Submit -->
+    <button type="submit" class="join-btn">Submit Application</button>
+  </form>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>MK Fitness</h3>
+        <p>2025 MK Fitness Gym. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <p>Follow us: 
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
